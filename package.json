@@ -1,6 +1,6 @@
 {
-    "name": "@wingedsmith/prettier-plugin-break-empty-tags",
-    "version": "0.0.1",
+    "name": "prettier-plugin-break-empty-tags",
+    "version": "0.0.2",
     "description": "A prettier plugin for support breaking the closing tag to a new line if there's no content",
     "main": "dist/index.min.js",
     "files": [
