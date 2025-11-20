@@ -4,7 +4,7 @@
     "description": "A prettier plugin for support breaking the closing tag to a new line if there's no content",
     "main": "dist/index.min.js",
     "files": [
-        "dist/index.min.js"
+        "lib"
     ],
     "scripts": {
         "build": "tsc && terser dist/index.js -o dist/index.min.js -c -m",
@@ -26,7 +26,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wingedsmith/prettier-plugin-break-empty-tags.git"
+        "url": "https://github.com/wingedsmith/prettier-plugin-break-empty-tags"
     },
     "bugs": {
         "url": "https://github.com/wingedsmith/prettier-plugin-break-empty-tags/issues"
