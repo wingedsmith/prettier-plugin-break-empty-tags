@@ -1,9 +1,8 @@
 {
     "name": "prettier-plugin-break-empty-tags",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A prettier plugin for support breaking the closing tag to a new line if there's no content",
-    "main": "lib/index",
-    "types": "lib/index",
+    "main": "lib/index.js",
     "files": [
         "lib"
     ],
@@ -36,11 +35,9 @@
     "homepage": "https://github.com/wingedsmith/prettier-plugin-break-empty-tags#readme",
     "license": "MIT",
     "peerDependencies": {
-        "prettier": "^3.3.3"
+        "prettier": "^3.7.4"
     },
     "devDependencies": {
-        "@typescript-eslint/parser": "^7.6.0",
-        "prettier": "^3.3.3",
         "terser": "^5.30.3",
         "typescript": "5.3.3"
     }
