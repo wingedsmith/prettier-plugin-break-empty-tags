@@ -1,15 +1,14 @@
 {
     "name": "prettier-plugin-break-empty-tags",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A prettier plugin for support breaking the closing tag to a new line if there's no content",
-    "main": "lib/index.js",
+    "main": "dist/index.min.js",
     "files": [
-        "lib"
+        "dist/index.min.js"
     ],
     "scripts": {
-        "build": "tsc --pretty",
-        "prepublishOnly": "npm run build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc && terser dist/index.js -o dist/index.min.js -c -m",
+        "release:plugin": "npm run build && npm publish"
     },
     "type": "commonjs",
     "keywords": [
@@ -38,6 +37,7 @@
         "prettier": "^3.7.4"
     },
     "devDependencies": {
+        "@typescript-eslint/parser": "^7.6.0",
         "terser": "^5.30.3",
         "typescript": "5.3.3"
     }

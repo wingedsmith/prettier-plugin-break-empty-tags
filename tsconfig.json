@@ -4,15 +4,20 @@
         "lib": ["ES2020"],
         "target": "esnext",
         "module": "commonjs",
-        "allowJs": true,
-        "outDir": "./lib",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "sourceMap": true,
         "removeComments": true,
         "inlineSources": true,
-        "rootDir": "./src",
-        "strict": false
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowJs": true
     },
-    "include": ["./src"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules"]
 }
   

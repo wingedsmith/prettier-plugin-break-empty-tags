@@ -1,7 +1,6 @@
 const { parsers: htmlParsers } = require('prettier/parser-html');
 
 function preprocessEmptyTags(text) {
-    console.log('preprocessEmptyTags', text);
     const matchPattern = /( *)(<[^>]*[\n\r]+[^>]*>) *(<\/[^>]*>)/gm
     const replacePattern = '$1$2\r\n$1$3'
     return text.replace(matchPattern, replacePattern);
@@ -9,14 +8,6 @@ function preprocessEmptyTags(text) {
 
 module.exports = {
     parsers: {
-        vue: {
-            ...htmlParsers.html,
-            preprocess: preprocessEmptyTags,
-        },
-        angular: {
-            ...htmlParsers.html,
-            preprocess: preprocessEmptyTags,
-        },
         html: {
             ...htmlParsers.html,
             preprocess: preprocessEmptyTags,
