@@ -1,6 +1,10 @@
+# gitignore
 node_modules
 package-lock.json
 bun.lockb
 yarn.lock
 
 lib
+
+# npmignore
+src
